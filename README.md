@@ -26,7 +26,7 @@ El sistema debe ser flexible, extensible y desacoplado, utilizando obligatoriame
 
 Implementación básica en Java que:
 
-- - Use todos los patrones solicitados.
-- - Demuestre al menos un cambio de estado del pedido.
-- - Muestre el cambio dinámico de estrategia de envío.
-- - Aplique al menos un decorador a una notificación.
+ - Use todos los patrones solicitados.
+ - Demuestre al menos un cambio de estado del pedido.
+ - Muestre el cambio dinámico de estrategia de envío.
+ - Aplique al menos un decorador a una notificación.
