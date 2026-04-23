@@ -1,4 +1,5 @@
 package SendStrategy;
+
 public interface SendStrategy {
-    public void send();
+    double calculateCost(double distance, double weight);
 }

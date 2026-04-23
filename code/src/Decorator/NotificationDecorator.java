@@ -1,6 +1,6 @@
 package Decorator;
 
-public class NotificationDecorator implements Notification {
+public abstract class NotificationDecorator implements Notification {
     protected Notification decoratedNotification;
 
     public NotificationDecorator(Notification decoratedNotification) {
