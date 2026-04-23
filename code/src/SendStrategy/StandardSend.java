@@ -1,10 +1,10 @@
 package SendStrategy;
 
-public class ExpressSend implements SendStrategy {
+public class StandardSend implements SendStrategy {
 
     @Override
     public double calculateCost(double distance, double weight) {
-        return 7000 + (distance * 1300) + (weight * 900);
+        return 4500 + (distance * 900) + (weight * 500);
     }
 
 }

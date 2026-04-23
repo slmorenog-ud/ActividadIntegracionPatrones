@@ -1,19 +1,32 @@
 public class SystemSetting {
-    private static SystemSetting systemSetting;
-    private double discount;
-    private double taxe;
-    private double moneda; //puede que no sea double
+    private static SystemSetting instance;
+    private double tax;
+    private String currency;
+    private double globalDiscount;
 
-    private SystemSetting(){
+    private SystemSetting() {
+        this.tax = 0.19;
+        this.currency = "COP";
+        this.globalDiscount = 0.05;
     }
 
-    public static SystemSetting getInstance(){
-        if(systemSetting==null){
-            systemSetting=new SystemSetting();
-            return systemSetting;
-        }else{
-            return systemSetting;
+    public static SystemSetting getInstance() {
+        if (instance == null) {
+            instance = new SystemSetting();
         }
-        
+
+        return instance;
+    }
+
+    public double getTax() {
+        return tax;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public double getGlobalDiscount() {
+        return globalDiscount;
     }
 }
